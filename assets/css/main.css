@@ -2,6 +2,13 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 html {
   font-family: "Poppins", sans-serif;
 }
@@ -189,6 +196,7 @@ h6 {
 }
 
 .container {
+  width: 90%;
   max-width: 1024px;
   margin: 0 auto;
 }
@@ -239,22 +247,21 @@ footer a:hover {
 }
 .our-products .products {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 32px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
   margin-bottom: 32px;
 }
 .our-products .products .product-item {
+  grid-column: span 1;
   position: relative;
 }
 .our-products .products .product-item .item-image {
   width: 100%;
-  height: 250px;
 }
 .our-products .products .product-item .item-image img {
   width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .our-products .products .product-item .item-contents {
   background-color: #f4f5f7;
@@ -287,7 +294,7 @@ footer a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 12px;
+  gap: 8px;
 }
 .our-products .products .product-item .item-contents .item-content-price span {
   font-size: 16px;
@@ -454,4 +461,10 @@ footer a:hover {
   color: #fff;
   -webkit-transition: all 0.7s ease-in-out;
   transition: all 0.7s ease-in-out;
+}
+
+@media screen and (max-width: 1024px) {
+  .item-contents .item-content-price del {
+    display: none;
+  }
 }
