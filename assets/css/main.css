@@ -235,6 +235,166 @@ footer a:hover {
   text-decoration: underline;
 }
 
+.decor-bg {
+  background-color: #fcf8f3;
+}
+
+.decor {
+  padding: 44px 0;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 42px;
+  margin-bottom: 65px;
+}
+.decor .decor-title {
+  grid-column: span 5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.decor .decor-title h2 {
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  line-height: 120%;
+}
+.decor .decor-title p {
+  font-size: 15px;
+  font-weight: 500;
+  color: #616161;
+  margin-bottom: 25px;
+  line-height: 150%;
+}
+.decor .decor-title button {
+  padding: 12px 36px;
+  background-color: #b88e2f;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  width: 50%;
+}
+.decor .decor-right {
+  grid-column: span 7;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 24px;
+  position: relative;
+}
+.decor .decor-right .decor-bedroom {
+  grid-column: span 7;
+  position: relative;
+}
+.decor .decor-right .decor-bedroom img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.decor .decor-right .decor-bedroom .bedroom-inner {
+  position: absolute;
+  left: 24px;
+  bottom: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.decor .decor-right .decor-bedroom .bedroom-inner .inner-title {
+  background-color: rgba(255, 255, 255, 0.72);
+  padding: 28px 14px;
+}
+.decor .decor-right .decor-bedroom .bedroom-inner .inner-title p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #616161;
+  margin-bottom: 8px;
+}
+.decor .decor-right .decor-bedroom .bedroom-inner .inner-title h5 {
+  font-size: 28px;
+  font-weight: 600;
+}
+.decor .decor-right .decor-bedroom .bedroom-inner .inner-buttom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+.decor .decor-right .decor-bedroom .bedroom-inner .inner-buttom button {
+  padding: 12px;
+  border: none;
+  background-color: #b88e2f;
+}
+.decor .decor-right .decor-bedroom .bedroom-inner .inner-buttom button i {
+  font-size: 26px;
+  color: #fff;
+}
+.decor .decor-right .decor-slider {
+  grid-column: span 5;
+  width: 100%;
+}
+.decor .decor-right .decor-slider img {
+  width: 100%;
+  height: 80%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 40px;
+}
+.decor .decor-right .decor-slider .click {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+.decor .decor-right .decor-slider .click button:nth-child(1) {
+  padding: 4px;
+  border-radius: 50%;
+  border: 1px solid #b88e2f;
+  background-color: #ffffff;
+}
+.decor .decor-right .decor-slider .click button:nth-child(1) p {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #b88e2f;
+}
+.decor .decor-right .decor-slider .click button {
+  padding: 4px;
+  border-radius: 50%;
+  border: none;
+  background-color: #d8d8d8;
+}
+.decor .decor-right .forward {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+}
+.decor .decor-right .forward button {
+  border: none;
+  border-radius: 50%;
+}
+.decor .decor-right .forward button i {
+  color: #b88e2f;
+  padding: 5px;
+  font-size: 26px;
+}
+
 .our-products {
   margin-bottom: 70px;
 }
@@ -372,8 +532,10 @@ footer a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-transition: all 0.7s ease-in-out;
-  transition: all 0.7s ease-in-out;
+}
+.our-products .products .product-item:hover .item-button .button-add button {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 .our-products .product-item:nth-child(1):after {
   position: absolute;
@@ -463,7 +625,7 @@ footer a:hover {
   transition: all 0.7s ease-in-out;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1080px) {
   .item-contents .item-content-price del {
     display: none;
   }
