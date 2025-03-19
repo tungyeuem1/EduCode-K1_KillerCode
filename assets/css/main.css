@@ -395,6 +395,112 @@ footer a:hover {
   font-size: 26px;
 }
 
+@media screen and (max-width: 768px) {
+  .decor {
+    padding: 32px 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 26px;
+    margin-bottom: 65px;
+  }
+  .decor .decor-title {
+    grid-column: span 6;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .decor .decor-title h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    line-height: 120%;
+  }
+  .decor .decor-title p {
+    font-size: 10px;
+    font-weight: 500;
+    color: #616161;
+    margin-bottom: 25px;
+    line-height: 150%;
+  }
+  .decor .decor-title button {
+    padding: 12px 36px;
+    background-color: #b88e2f;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 600;
+    border: none;
+    width: 50%;
+  }
+  .decor .decor-right {
+    grid-column: span 6;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 24px;
+    position: relative;
+  }
+  .decor .decor-right .decor-bedroom {
+    grid-column: span 12;
+    position: relative;
+  }
+  .decor .decor-right .decor-bedroom img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .decor .decor-right .decor-bedroom .bedroom-inner {
+    position: absolute;
+    left: 24px;
+    bottom: 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .decor .decor-right .decor-bedroom .bedroom-inner .inner-title {
+    background-color: rgba(255, 255, 255, 0.72);
+    padding: 28px 14px;
+  }
+  .decor .decor-right .decor-bedroom .bedroom-inner .inner-title p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #616161;
+    margin-bottom: 8px;
+  }
+  .decor .decor-right .decor-bedroom .bedroom-inner .inner-title h5 {
+    font-size: 28px;
+    font-weight: 600;
+  }
+  .decor .decor-right .decor-bedroom .bedroom-inner .inner-buttom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+  .decor .decor-right .decor-bedroom .bedroom-inner .inner-buttom button {
+    padding: 12px;
+    border: none;
+    background-color: #b88e2f;
+  }
+  .decor .decor-right .decor-bedroom .bedroom-inner .inner-buttom button i {
+    font-size: 26px;
+    color: #fff;
+  }
+  .decor .decor-right .decor-slider {
+    display: none;
+  }
+}
 .our-products {
   margin-bottom: 70px;
 }
