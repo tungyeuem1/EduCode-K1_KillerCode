@@ -691,6 +691,86 @@ footer a:hover {
     color: #fff;
   }
 }
+.filter {
+  margin-bottom: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 38px;
+}
+.filter button {
+  padding: 15px 26px;
+  font-size: 20px;
+  color: #000000;
+  background-color: #F9F1E7;
+  border: none;
+  border-radius: 10px;
+}
+.filter button:nth-child(1) {
+  background-color: #B88E2F;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .filter {
+    margin-bottom: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 28px;
+  }
+  .filter button {
+    padding: 15px 20px;
+    font-size: 16px;
+    color: #000000;
+    background-color: #F9F1E7;
+    border: none;
+    border-radius: 10px;
+  }
+  .filter button:nth-child(1) {
+    background-color: #B88E2F;
+    color: #fff;
+  }
+}
+@media screen and (max-width: 480px) {
+  .filter {
+    margin-bottom: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 16px;
+  }
+  .filter button {
+    padding: 10px 16px;
+    font-size: 12px;
+    color: #000000;
+    background-color: #F9F1E7;
+    border: none;
+    border-radius: 10px;
+  }
+  .filter button:nth-child(1) {
+    background-color: #B88E2F;
+    color: #fff;
+  }
+}
 .our-products {
   margin-bottom: 70px;
 }
