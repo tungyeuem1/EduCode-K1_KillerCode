@@ -1,0 +1,839 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 54px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+h4 {
+  font-size: 28px;
+}
+
+h5 {
+  font-size: 24px;
+}
+
+h6 {
+  font-size: 22px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 800;
+}
+
+.container {
+  width: 90%;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+}
+header h1 {
+  font-size: 2em;
+  margin: 0;
+}
+header p {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  z-index: 10;
+}
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+.decor-bg {
+  background-color: #fcf8f3;
+}
+
+.decor {
+  padding: 44px 0;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 42px;
+  margin-bottom: 65px;
+}
+.decor .decor-title {
+  grid-column: span 5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.decor .decor-title h2 {
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  line-height: 120%;
+}
+.decor .decor-title p {
+  font-size: 15px;
+  font-weight: 500;
+  color: #616161;
+  margin-bottom: 25px;
+  line-height: 150%;
+}
+.decor .decor-title button {
+  padding: 12px 36px;
+  background-color: #b88e2f;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  width: 50%;
+}
+.decor .decor-right {
+  grid-column: span 7;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 24px;
+  position: relative;
+}
+.decor .decor-right .decor-bedroom {
+  grid-column: span 7;
+  position: relative;
+}
+.decor .decor-right .decor-bedroom img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.decor .decor-right .decor-bedroom .bedroom-inner {
+  position: absolute;
+  left: 24px;
+  bottom: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.decor .decor-right .decor-bedroom .bedroom-inner .inner-title {
+  background-color: rgba(255, 255, 255, 0.72);
+  padding: 28px 14px;
+}
+.decor .decor-right .decor-bedroom .bedroom-inner .inner-title p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #616161;
+  margin-bottom: 8px;
+}
+.decor .decor-right .decor-bedroom .bedroom-inner .inner-title h5 {
+  font-size: 28px;
+  font-weight: 600;
+}
+.decor .decor-right .decor-bedroom .bedroom-inner .inner-buttom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+.decor .decor-right .decor-bedroom .bedroom-inner .inner-buttom button {
+  padding: 12px;
+  border: none;
+  background-color: #b88e2f;
+}
+.decor .decor-right .decor-bedroom .bedroom-inner .inner-buttom button i {
+  font-size: 26px;
+  color: #fff;
+}
+.decor .decor-right .decor-slider {
+  grid-column: span 5;
+  width: 100%;
+}
+.decor .decor-right .decor-slider img {
+  width: 100%;
+  height: 80%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 40px;
+}
+.decor .decor-right .decor-slider .click {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+.decor .decor-right .decor-slider .click button:nth-child(1) {
+  padding: 4px;
+  border-radius: 50%;
+  border: 1px solid #b88e2f;
+  background-color: #ffffff;
+}
+.decor .decor-right .decor-slider .click button:nth-child(1) p {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #b88e2f;
+}
+.decor .decor-right .decor-slider .click button {
+  padding: 4px;
+  border-radius: 50%;
+  border: none;
+  background-color: #d8d8d8;
+}
+.decor .decor-right .forward {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+}
+.decor .decor-right .forward button {
+  border: none;
+  border-radius: 50%;
+}
+.decor .decor-right .forward button i {
+  color: #b88e2f;
+  padding: 5px;
+  font-size: 26px;
+}
+
+@media screen and (max-width: 768px) {
+  .decor {
+    padding: 32px 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 26px;
+    margin-bottom: 65px;
+  }
+  .decor .decor-title {
+    grid-column: span 6;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .decor .decor-title h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    line-height: 120%;
+  }
+  .decor .decor-title p {
+    font-size: 10px;
+    font-weight: 500;
+    color: #616161;
+    margin-bottom: 25px;
+    line-height: 150%;
+  }
+  .decor .decor-title button {
+    padding: 12px 36px;
+    background-color: #b88e2f;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 600;
+    border: none;
+    width: 50%;
+  }
+  .decor .decor-right {
+    grid-column: span 6;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 24px;
+    position: relative;
+  }
+  .decor .decor-right .decor-bedroom {
+    grid-column: span 12;
+    position: relative;
+  }
+  .decor .decor-right .decor-bedroom img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .decor .decor-right .decor-bedroom .bedroom-inner {
+    position: absolute;
+    left: 24px;
+    bottom: 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .decor .decor-right .decor-bedroom .bedroom-inner .inner-title {
+    background-color: rgba(255, 255, 255, 0.72);
+    padding: 28px 14px;
+  }
+  .decor .decor-right .decor-bedroom .bedroom-inner .inner-title p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #616161;
+    margin-bottom: 8px;
+  }
+  .decor .decor-right .decor-bedroom .bedroom-inner .inner-title h5 {
+    font-size: 28px;
+    font-weight: 600;
+  }
+  .decor .decor-right .decor-bedroom .bedroom-inner .inner-buttom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+  .decor .decor-right .decor-bedroom .bedroom-inner .inner-buttom button {
+    padding: 12px;
+    border: none;
+    background-color: #b88e2f;
+  }
+  .decor .decor-right .decor-bedroom .bedroom-inner .inner-buttom button i {
+    font-size: 26px;
+    color: #fff;
+  }
+  .decor .decor-right .decor-slider {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .decor {
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-bottom: 65px;
+  }
+  .decor .decor-title {
+    grid-column: span 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .decor .decor-title h2 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    line-height: 120%;
+  }
+  .decor .decor-title p {
+    font-size: 8px;
+    font-weight: 500;
+    color: #616161;
+    margin-bottom: 20px;
+    line-height: 150%;
+  }
+  .decor .decor-title button {
+    padding: 12px 12px;
+    background-color: #b88e2f;
+    color: #fff;
+    font-size: 8px;
+    font-weight: 600;
+    border: none;
+    width: 50%;
+  }
+  .decor .decor-right {
+    grid-column: span 1;
+    position: relative;
+  }
+  .decor .decor-right .decor-bedroom {
+    width: 100%;
+    position: relative;
+  }
+  .decor .decor-right .decor-bedroom img {
+    width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .decor .decor-right .decor-bedroom .bedroom-inner {
+    position: absolute;
+    left: 14px;
+    bottom: 14px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .decor .decor-right .decor-bedroom .bedroom-inner .inner-title {
+    background-color: rgba(255, 255, 255, 0.72);
+    padding: 18px 10px;
+  }
+  .decor .decor-right .decor-bedroom .bedroom-inner .inner-title p {
+    font-size: 10px;
+    font-weight: 500;
+    color: #616161;
+    margin-bottom: 8px;
+  }
+  .decor .decor-right .decor-bedroom .bedroom-inner .inner-title h5 {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .decor .decor-right .decor-bedroom .bedroom-inner .inner-buttom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+  .decor .decor-right .decor-bedroom .bedroom-inner .inner-buttom button {
+    padding: 6px;
+    border: none;
+    background-color: #b88e2f;
+  }
+  .decor .decor-right .decor-bedroom .bedroom-inner .inner-buttom button i {
+    font-size: 16px;
+    color: #fff;
+  }
+}
+.our-products {
+  margin-bottom: 70px;
+}
+.our-products h2 {
+  text-align: center;
+  margin-bottom: 32px;
+  font-size: 40px;
+  font-weight: 700;
+  color: #3a3a3a;
+}
+.our-products .products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-bottom: 32px;
+}
+.our-products .products .product-item {
+  grid-column: span 1;
+  position: relative;
+}
+.our-products .products .product-item .item-image {
+  width: 100%;
+}
+.our-products .products .product-item .item-image img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.our-products .products .product-item .item-contents {
+  background-color: #f4f5f7;
+  padding: 16px;
+}
+.our-products .products .product-item .item-contents h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.our-products .products .product-item .item-contents p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #898989;
+  margin-bottom: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.our-products .products .product-item .item-contents .item-content-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+}
+.our-products .products .product-item .item-contents .item-content-price span {
+  font-size: 16px;
+  font-weight: 600;
+  color: #3a3a3a;
+}
+.our-products .products .product-item .item-contents .item-content-price del {
+  font-size: 12px;
+  font-weight: 400;
+  color: #898989;
+}
+.our-products .products .product-item .item-button {
+  display: none;
+  background-color: #3a3a3a;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  opacity: 0.8;
+}
+.our-products .products .product-item .item-button .button-add {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.our-products .products .product-item .item-button .button-add button {
+  padding: 12px 50px;
+  font-size: 16px;
+  color: #b88e2f;
+  font-weight: 600;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 24px;
+}
+.our-products .products .product-item .item-button .item-button-share {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+.our-products .products .product-item .item-button .item-button-share button {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  border: none;
+  background: none;
+}
+.our-products .products .product-item .item-button .item-button-share button i {
+  margin-right: 2px;
+}
+.our-products .products .product-item:hover .item-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.our-products .products .product-item:hover .item-button .button-add button {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.our-products .product-item:nth-child(1):after {
+  position: absolute;
+  content: "-30%";
+  width: 40px;
+  height: 40px;
+  background-color: #e97171;
+  top: 24px;
+  right: 24px;
+  border-radius: 50%;
+  font-size: 12px;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1;
+}
+.our-products .product-item:nth-child(3):after,
+.our-products .product-item:nth-child(7):after {
+  position: absolute;
+  content: "-50%";
+  width: 40px;
+  height: 40px;
+  background-color: #e97171;
+  top: 24px;
+  right: 24px;
+  border-radius: 50%;
+  font-size: 12px;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1;
+}
+.our-products .product-item:nth-child(4):after,
+.our-products .product-item:nth-child(6):after,
+.our-products .product-item:nth-child(8):after {
+  position: absolute;
+  content: "New";
+  width: 40px;
+  height: 40px;
+  background-color: #2ec1ac;
+  top: 24px;
+  right: 24px;
+  border-radius: 50%;
+  font-size: 12px;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1;
+}
+.our-products .show-more {
+  background-color: #fff;
+  text-align: center;
+}
+.our-products .show-more button {
+  font-size: 16px;
+  font-weight: 600;
+  color: #b88e2f;
+  padding: 12px 80px;
+  border: 1px solid #b88e2f;
+  background-color: #fff;
+}
+.our-products button:hover {
+  background-color: #7e6630;
+  color: #fff;
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+}
+
+@media screen and (max-width: 1080px) {
+  .item-contents .item-content-price del {
+    display: none;
+  }
+}
