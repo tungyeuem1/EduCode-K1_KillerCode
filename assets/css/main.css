@@ -1021,4 +1021,90 @@ footer a:hover {
   grid-column: 9 / 12;
   grid-row: 5 / 7;
 }
+.footer {
+  background-color: #f8f9fa;
+  padding: 60px 0; /* Tăng padding để tạo khoảng cách */
+}
+.footer h5 {
+  font-weight: bold;
+  margin-bottom: 20px; /* Tăng khoảng cách dưới tiêu đề */
+}
+.footer p {
+  color: #6c757d;
+  margin-bottom: 10px; /* Giãn cách dòng */
+}
+.footer ul {
+  padding-left: 0;
+  list-style: none;
+}
+.footer ul li {
+  margin-bottom: 12px; /* Tăng khoảng cách giữa các mục */
+}
+.footer input {
+  border: none;
+  border-bottom: 1px solid black;
+  background: transparent;
+  padding: 8px;
+  width: 100%;
+  outline: none;
+}
+.footer .subscribe-btn {
+  border-bottom: 1px solid black;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 15px; /* Tăng khoảng cách với ô nhập email */
+}
+.footer .subscribe-btn:hover {
+  text-decoration: underline;
+}
+.footer .copyright {
+  border-top: 1px solid #ddd;
+  padding-top: 25px;
+  margin-top: 30px;
+  text-align: center;
+  font-size: 15px;
+}
+      /* Hero Section */
+      .hero {
+        position: relative;
+        width: 100%;
+        height: 500px;
+        background: url('../image/banner.jpg') no-repeat center center/cover;
+        display: flex;
+        align-items: center;
+    }
+
+    .hero-content {
+        background: rgba(245, 230, 200, 0.95); 
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        max-width: 400px;
+    }
+    
+    .hero-content h1 {
+        font-size: 28px;
+        font-weight: bold;
+        color: #6a521b;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+        color: #555;
+    }
+
+    /* Nút BUY NOW */
+    .hero-btn {
+        background-color: #a58545;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: background 0.3s;
+    }
+
+    .hero-btn:hover {
+        background-color: #8a6b37;
+    }
+
 >>>>>>> 9ce9c45cc1451a49ab44b82d0de8eb9044bcf717
