@@ -477,6 +477,10 @@ body {
     color: #9f9f9f;
   }
 }
+.breadcrumbs-mg {
+  margin-bottom: 70px;
+}
+
 .breadcrumbs {
   text-align: center;
   position: relative;
@@ -2195,6 +2199,102 @@ button.comparison-add-to-cart {
     width: 100%; /* Nút add to cart chiếm hết chiều rộng */
   }
 }
+.contract {
+  margin-bottom: 60px;
+}
+.contract .ct-title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.contract .ct-title h2 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.contract .ct-title p {
+  font-size: 16px;
+  color: #9f9f9f;
+  line-height: 140%;
+}
+.contract .ct-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+.contract .ct-content .content-information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 40px;
+}
+.contract .ct-content .content-information .in-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+.contract .ct-content .content-information .in-item span {
+  font-size: 28px;
+}
+.contract .ct-content .content-information .in-item .item-content p:nth-child(1) {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.contract .ct-content .content-information .in-item .item-content p {
+  font-size: 16px;
+  line-height: 140%;
+}
+.contract .ct-content .content-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 36px;
+}
+.contract .ct-content .content-input .form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 22px;
+}
+.contract .ct-content .content-input .form-group input,
+.contract .ct-content .content-input .form-group textarea {
+  width: 100%;
+  padding: 26px 20px;
+  color: #9f9f9f;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 8px;
+  border: 1px solid #9f9f9f;
+  resize: none;
+}
+.contract .ct-content .content-input .form-group label {
+  font-size: 18px;
+  font-weight: 600;
+}
+.contract .ct-content .content-input .form-group button {
+  padding: 18px 30px;
+  background-color: #b88e2f;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+}
+.contract .ct-content .content-input .form-group:nth-last-child(1) {
+  width: 40%;
+}
+
 .product-detail .detail-item {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

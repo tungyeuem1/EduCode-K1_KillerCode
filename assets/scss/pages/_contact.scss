@@ -1,0 +1,82 @@
+.contract {
+  margin-bottom: 60px;
+  .ct-title {
+    text-align: center;
+    margin-bottom: 60px;
+    h2 {
+      font-size: 36px;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+    p {
+      font-size: 16px;
+      color: #9f9f9f;
+      line-height: 140%;
+    }
+  }
+  .ct-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    .content-information {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      .in-item {
+        display: flex;
+        gap: 30px;
+        span {
+          font-size: 28px;
+        }
+        .item-content {
+          p:nth-child(1) {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 4px;
+          }
+          p {
+            font-size: 16px;
+            line-height: 140%;
+          }
+        }
+      }
+    }
+    .content-input {
+      display: flex;
+      flex-direction: column;
+      gap: 36px;
+      .form-group {
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+        input,
+        textarea {
+          width: 100%;
+          padding: 26px 20px;
+          color: #9f9f9f;
+          font-size: 16px;
+          font-weight: 500;
+          border-radius: 8px;
+          border: 1px solid #9f9f9f;
+          resize: none;
+        }
+
+        label {
+          font-size: 18px;
+          font-weight: 600;
+        }
+        button {
+          padding: 18px 30px;
+          background-color: #b88e2f;
+          color: #fff;
+          border: none;
+          border-radius: 8px;
+        }
+      }
+      .form-group:nth-last-child(1){
+        width: 40%;
+      }
+      
+    }
+  }
+}
