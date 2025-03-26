@@ -2147,7 +2147,7 @@ button {
           justify-content: center;
   text-align: center;
 }
-.cart .checkout .button-checkout button {
+.cart .checkout .button-checkout a {
   padding: 14px 40px;
   border: 1px solid #000;
   border-radius: 15px;
