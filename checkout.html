@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>\
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <!-- <style>* {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+    
+    body {
+        background-color: #f8f8f8;
+        padding: 20px;
+    }
+    
+    /* Bọc tất cả trong container */
+    .container {
+        max-width: 900px;
+        margin: auto;
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Chia bố cục chính */
+    .checkout-wrapper {
+        display: flex;
+        gap: 20px;
+    }
+    
+    /* Phần thông tin khách hàng */
+    .checkout-billing {
+        flex: 2;
+        padding-right: 20px;
+    }
+    
+    .checkout-billing h2,
+    .checkout-summary h2 {
+        margin-bottom: 15px;
+    }
+    
+    label {
+        display: block;
+        margin: 10px 0 5px;
+        font-weight: bold;
+    }
+    
+    input, select, textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+    
+    /* Chia cột ngang hàng */
+    .checkout-row {
+        display: flex;
+        gap: 10px;
+    }
+    
+    .checkout-col {
+        flex: 1;
+    }
+    
+    /* Phần thanh toán */
+    .checkout-summary {
+        flex: 1;
+        padding-left: 20px;
+        border-left: 2px solid #eee;
+    }
+    
+    .checkout-summary p {
+        margin-bottom: 10px;
+    }
+    
+    .checkout-total-price {
+        color: #ff9800;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    
+    .checkout-payment-method {
+        margin-top: 10px;
+    }
+    
+    .checkout-payment-info {
+        font-size: 14px;
+        color: gray;
+        margin-left: 20px;
+    }
+    
+    .checkout-place-order {
+        width: 100%;
+        padding: 10px;
+        background: #ff9800;
+        border: none;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .checkout-place-order:hover {
+        background: #e68900;
+    }
+    
+    /* Responsive cho màn hình nhỏ */
+    @media screen and (max-width: 768px) {
+        .checkout-wrapper {
+            flex-direction: column;
+        }
+        .checkout-summary {
+            border-left: none;
+            padding-left: 0;
+        }
+        .checkout-row {
+            flex-direction: column;
+        }
+    }
+    </style> -->
+</head>
+<body>
+    <div class="container">
+        <div class="checkout-wrapper">
+            <form class="checkout-billing">
+                <h3>Billing details</h3>
+                
+                <div class="checkout-row">
+                    <div class="checkout-col">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" name="first-name">
+                    </div>
+                    <div class="checkout-col">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="last-name">
+                    </div>
+                </div>
+
+                <label for="company-name">Company Name (Optional)</label>
+                <input type="text" id="company-name" name="company-name">
+
+                <label for="country">Country / Region</label>
+                <select id="country" name="country">
+                    <option value="Sri Lanka">Sri Lanka</option>
+                </select>
+
+                <div class="checkout-row">
+                    <div class="checkout-col">
+                        <label for="street-address">Street Address</label>
+                        <input type="text" id="street-address" name="street-address">
+                    </div>
+                    <div class="checkout-col">
+                        <label for="city">Town / City</label>
+                        <input type="text" id="city" name="city">
+                    </div>
+                </div>
+
+                <label for="province">Province</label>
+                <select id="province" name="province">
+                    <option value="Western Province">Western Province</option>
+                </select>
+
+                <label for="zip">ZIP Code</label>
+                <input type="text" id="zip" name="zip">
+
+                <label for="phone">Phone</label>
+                <input type="text" id="phone" name="phone">
+
+                <label for="email">Email address</label>
+                <input type="email" id="email" name="email">
+
+                <label for="additional-info">Additional Information</label>
+                <textarea id="additional-info" name="additional-info"></textarea>
+            </form>
+
+            <div class="checkout-summary">
+                <div class="checkout-product">
+                    <h6>Product</h6>
+                    <h6>Subtotal</h6>
+                    </div>
+                <div class="checkout-product">
+                    <p><span >Aggroset Sofa </span> x 1</p>
+                    <p>Rs.250.000.00</p>
+                </div>
+                <div class="checkout-product">
+                    <p>Subtotal</p>
+                    <p>Rs.250.000.00</p>
+                </div>
+                <div class="checkout-product">
+                    <p>Total</p>
+                    
+                    <h5 class="checkout-total">Rs.250.000.00</h5>
+                </div>
+                <hr>
+                <div class="checkout-payment-method">
+                    <label><input type="radio" name="payment" > Direct Bank Transfer</label>
+                    <p class="checkout-payment-info">Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account.</p>
+                    <label><input type="radio" name="payment"><p class="checkout-lable"> Direct Bank Transfer</p></label>
+                    <label><input type="radio" name="payment"><p class="checkout-lable"> Cash On Delivery</p></label>
+                </div>
+
+                <button class="checkout-place-order">Place order</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

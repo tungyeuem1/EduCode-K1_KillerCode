@@ -1,0 +1,156 @@
+// * {
+//     box-sizing: border-box;
+//     margin: 0;
+//     padding: 0;
+//     font-family: Arial, sans-serif;
+// }
+
+// body {
+//     background-color: #f8f8f8;
+//     padding: 20px;
+// }
+
+/* Bọc tất cả trong container */
+// .container {
+//     max-width: 900px;
+//     margin: auto;
+//     background: white;
+//     padding: 20px;
+//     border-radius: 8px;
+//     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+// }
+
+/* Chia bố cục chính */
+.checkout-wrapper {
+    display: flex;
+    gap: 130px;
+    align-items: flex-start;
+}
+
+/* Phần thông tin khách hàng */
+.checkout-billing {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.checkout-billing h3,
+.checkout-summary h3 {
+    margin-bottom: 15px;
+}
+
+
+label {
+    display: block;
+    margin: 10px 0 10px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 20px;
+    margin-top: 5px;
+    margin-bottom: 24px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+}
+
+/* Chia cột ngang hàng */
+.checkout-row {
+    display: flex;
+    gap: 50px;
+}
+
+.checkout-col {
+    flex: 1;
+   
+}
+
+/* Phần thanh toán */
+.checkout-summary {
+    flex: 1;
+    padding-left: 20px;
+    margin-top: 40px;
+    
+}
+.checkout-total{
+    color: #B88E2F;
+    font-size: 20px;
+}
+.checkout-summary h6 {
+ 
+    font-size: 24px;
+    
+}
+
+.checkout-summary p {
+    font-size: 13px;
+    margin-bottom: 15px;
+   
+}
+.checkout-summary span{
+    font-size: 13px;
+    margin-bottom: 15x;
+    opacity: 0.5;
+   
+}
+
+.checkout-total-price {
+    color: #ff9800;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.checkout-payment-method {
+    margin-top: 10px;
+}
+
+.checkout-payment-info {
+    font-size: 14px;
+    color: gray;
+    margin-left: 20px;
+    opacity: 0.5;
+}
+button{ display: block;
+    margin: auto;;}
+.checkout-place-order {
+    width: 70%;
+    padding: 15px;
+    background: white;
+    border: 1px solid black;
+    
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.checkout-product{
+    display: flex;
+    justify-content: space-between;
+   
+    
+   
+    font-size: 28px;
+    padding: 5px 0;
+    
+   
+}
+
+.checkout-lable{
+    opacity: 0.6;
+}
+
+/* Responsive cho màn hình nhỏ */
+@media screen and (max-width: 768px) {
+    .checkout-wrapper {
+        flex-direction: column;
+    }
+    .checkout-summary {
+        border-left: none;
+        padding-left: 0;
+     
+    }
+    .checkout-row {
+        flex-direction: column;
+    }
+}
