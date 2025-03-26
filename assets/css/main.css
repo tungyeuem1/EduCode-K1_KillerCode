@@ -217,74 +217,6 @@ h6 {
 }
 .header .logo {
   grid-area: logo;
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 10px;
-}
-.header .logo img {
-  background: none;
-}
-.header .logo p {
-  font-size: 34px;
-  font-weight: 700;
-}
-.header .navbar-menu {
-  grid-area: nav;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.header .navbar-menu li {
-  position: relative;
-}
-.header .navbar-menu li::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 1px;
-  background-color: #000;
-  left: 50%;
-  bottom: -4px;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  -webkit-transition: width 0.6s ease;
-  transition: width 0.6s ease;
-}
-.header .navbar-menu li:hover::after {
-  width: 80%;
-}
-
-.footer h5 {
-  font-weight: bold;
-}
-
-.footer a {
-  color: black;
-  text-decoration: none;
-  display: block;
-  margin-bottom: 8px;
-}
-
-.footer a:hover {
-  text-decoration: underline;
-}
-
-.newsletter-container {
-=======
->>>>>>> 3f1ec1c10a08c558996d9a683b54406f5536b9a1
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -462,6 +394,156 @@ h6 {
   font-weight: 600;
 }
 
+/* Bọc tất cả trong container */
+/* Chia bố cục chính */
+.checkout-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 130px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+/* Phần thông tin khách hàng */
+.checkout-billing {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding-right: 20px;
+}
+
+.checkout-billing h3,
+.checkout-summary h3 {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin: 10px 0 10px;
+  font-weight: bold;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 20px;
+  margin-top: 5px;
+  margin-bottom: 24px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+}
+
+/* Chia cột ngang hàng */
+.checkout-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 50px;
+}
+
+.checkout-col {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+/* Phần thanh toán */
+.checkout-summary {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding-left: 20px;
+  margin-top: 40px;
+}
+
+.checkout-total {
+  color: #B88E2F;
+  font-size: 20px;
+}
+
+.checkout-summary h6 {
+  font-size: 24px;
+}
+
+.checkout-summary p {
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+
+.checkout-summary span {
+  font-size: 13px;
+  margin-bottom: 15x;
+  opacity: 0.5;
+}
+
+.checkout-total-price {
+  color: #ff9800;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.checkout-payment-method {
+  margin-top: 10px;
+}
+
+.checkout-payment-info {
+  font-size: 14px;
+  color: gray;
+  margin-left: 20px;
+  opacity: 0.5;
+}
+
+button {
+  display: block;
+  margin: auto;
+}
+
+.checkout-place-order {
+  width: 70%;
+  padding: 15px;
+  background: white;
+  border: 1px solid black;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.checkout-product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 28px;
+  padding: 5px 0;
+}
+
+.checkout-lable {
+  opacity: 0.6;
+}
+
+/* Responsive cho màn hình nhỏ */
+@media screen and (max-width: 768px) {
+  .checkout-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .checkout-summary {
+    border-left: none;
+    padding-left: 0;
+  }
+  .checkout-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .filter-product {
   background-color: #f9f1e7;
   margin-bottom: 60px;
