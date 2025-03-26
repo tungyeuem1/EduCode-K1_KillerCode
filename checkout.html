@@ -1,137 +1,69 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checkout</title>\
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <title>Document</title>
+    <!-- link font-poppin -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- link icon-box -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="./assets/css/main.css">
-    <!-- <style>* {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-        font-family: Arial, sans-serif;
-    }
-    
-    body {
-        background-color: #f8f8f8;
-        padding: 20px;
-    }
-    
-    /* Bọc tất cả trong container */
-    .container {
-        max-width: 900px;
-        margin: auto;
-        background: white;
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-    
-    /* Chia bố cục chính */
-    .checkout-wrapper {
-        display: flex;
-        gap: 20px;
-    }
-    
-    /* Phần thông tin khách hàng */
-    .checkout-billing {
-        flex: 2;
-        padding-right: 20px;
-    }
-    
-    .checkout-billing h2,
-    .checkout-summary h2 {
-        margin-bottom: 15px;
-    }
-    
-    label {
-        display: block;
-        margin: 10px 0 5px;
-        font-weight: bold;
-    }
-    
-    input, select, textarea {
-        width: 100%;
-        padding: 8px;
-        margin-bottom: 10px;
-        border: 1px solid #ddd;
-        border-radius: 4px;
-    }
-    
-    /* Chia cột ngang hàng */
-    .checkout-row {
-        display: flex;
-        gap: 10px;
-    }
-    
-    .checkout-col {
-        flex: 1;
-    }
-    
-    /* Phần thanh toán */
-    .checkout-summary {
-        flex: 1;
-        padding-left: 20px;
-        border-left: 2px solid #eee;
-    }
-    
-    .checkout-summary p {
-        margin-bottom: 10px;
-    }
-    
-    .checkout-total-price {
-        color: #ff9800;
-        font-size: 18px;
-        font-weight: bold;
-    }
-    
-    .checkout-payment-method {
-        margin-top: 10px;
-    }
-    
-    .checkout-payment-info {
-        font-size: 14px;
-        color: gray;
-        margin-left: 20px;
-    }
-    
-    .checkout-place-order {
-        width: 100%;
-        padding: 10px;
-        background: #ff9800;
-        border: none;
-        color: white;
-        font-size: 16px;
-        font-weight: bold;
-        border-radius: 5px;
-        cursor: pointer;
-    }
-    
-    .checkout-place-order:hover {
-        background: #e68900;
-    }
-    
-    /* Responsive cho màn hình nhỏ */
-    @media screen and (max-width: 768px) {
-        .checkout-wrapper {
-            flex-direction: column;
-        }
-        .checkout-summary {
-            border-left: none;
-            padding-left: 0;
-        }
-        .checkout-row {
-            flex-direction: column;
-        }
-    }
-    </style> -->
 </head>
+
 <body>
+    <section class="container">
+        <header class="header">
+            <div class="logo">
+                <img src="./assets/image/logo.svg" alt="">
+                <p>Furniro</p>
+            </div>
+            <ul class="navbar-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <ul class="icon">
+                <li><a href=""><span class="material-symbols-outlined">
+                            person
+                        </span></a></li>
+                <li><a href=""><span class="material-symbols-outlined">
+                            search
+                        </span></a></li>
+                <li><a href=""><span class="material-symbols-outlined">
+                            favorite
+                        </span></a></li>
+                <li><a href="cart.html"><span class="material-symbols-outlined">
+                            shopping_cart
+                        </span></a></li>
+            </ul>
+        </header>
+    </section>
+    <section class="breadcrumbs breadcrumbs-mg">
+        <img src="./assets/image/Rectangle_1.svg" alt="">
+        <div class="breadcrumnb-content">
+            <img src="./assets/image/logo.svg" alt="">
+            <h2>Checkout</h2>
+            <div class="content-title">
+                <p>Home</p>
+                <p><i class='bx bx-chevron-right'></i></p>
+                <p>Checkout</p>
+            </div>
+        </div>
+    </section>
+    
     <div class="container">
         <div class="checkout-wrapper">
             <form class="checkout-billing">
                 <h3>Billing details</h3>
-                
+
                 <div class="checkout-row">
                     <div class="checkout-col">
                         <label for="first-name">First Name</label>
@@ -184,9 +116,9 @@
                 <div class="checkout-product">
                     <h6>Product</h6>
                     <h6>Subtotal</h6>
-                    </div>
+                </div>
                 <div class="checkout-product">
-                    <p><span >Aggroset Sofa </span> x 1</p>
+                    <p><span>Aggroset Sofa </span> x 1</p>
                     <p>Rs.250.000.00</p>
                 </div>
                 <div class="checkout-product">
@@ -195,20 +127,109 @@
                 </div>
                 <div class="checkout-product">
                     <p>Total</p>
-                    
+
                     <h5 class="checkout-total">Rs.250.000.00</h5>
                 </div>
                 <hr>
                 <div class="checkout-payment-method">
-                    <label><input type="radio" name="payment" > Direct Bank Transfer</label>
-                    <p class="checkout-payment-info">Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account.</p>
-                    <label><input type="radio" name="payment"><p class="checkout-lable"> Direct Bank Transfer</p></label>
-                    <label><input type="radio" name="payment"><p class="checkout-lable"> Cash On Delivery</p></label>
+                    <label><input type="radio" name="payment"> Direct Bank Transfer</label>
+                    <p class="checkout-payment-info">Make your payment directly into our bank account. Please use your
+                        Order ID as the payment reference. Your order will not be shipped until the funds have cleared
+                        in our account.</p>
+                    <label><input type="radio" name="payment">
+                        <p class="checkout-lable"> Direct Bank Transfer</p>
+                    </label>
+                    <label><input type="radio" name="payment">
+                        <p class="checkout-lable"> Cash On Delivery</p>
+                    </label>
                 </div>
 
                 <button class="checkout-place-order">Place order</button>
             </div>
         </div>
     </div>
+    <section class="bg-services">
+        <section class="container">
+            <section class="services">
+                <div class="service-item">
+                    <img src="./assets/image/services_1.svg" alt="">
+                    <div class="item-title">
+                        <h5>High Quality</h5>
+                        <p>crafted from top materials</p>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <img src="./assets/image/services_2.svg" alt="">
+                    <div class="item-title">
+                        <h5>Warranty Protection</h5>
+                        <p>Over 2 years</p>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <img src="./assets/image/services_3.svg" alt="">
+                    <div class="item-title">
+                        <h5>Free Shipping</h5>
+                        <p>Order over 150 $</p>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <img src="./assets/image/services_4.svg" alt="">
+                    <div class="item-title">
+                        <h5>24 / 7 Support</h5>
+                        <p>Dedicated support</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </section>
+    <hr>
+    <section class="container">
+        <footer class="footer">
+            <div class="footer-content">
+                <!-- Cột 1 -->
+                <div class="footer-column">
+                    <h3>Funiro</h3>
+                    <p class="opacity">400 University Drive Suite 200 Coral <br> Gables,<br>FL 33134 USA</p>
+                </div>
+
+                <!-- Cột 2 -->
+                <div class="footer-column">
+                    <h5 class="opacity">Links</h5>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Shop</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Cột 3 -->
+                <div class="footer-column">
+                    <h5 class="opacity">Help</h5>
+                    <ul>
+                        <li><a href="">Payment Options</a></li>
+                        <li><a href="">Returns</a></li>
+                        <li><a href="">Privacy Policies</a></li>
+                    </ul>
+                </div>
+
+                <!-- Cột 4 - Newsletter -->
+                <div class="footer-column">
+                    <h5 class="opacity">Newsletter</h5>
+                    <div class="newsletter">
+                        <input type="email"  placeholder="Enter Your Email Address">
+                        <button>SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="footer-line"> <!-- Thanh ngang -->
+
+            <div class="copyright">
+                <p>2023 funiro. All rights reserved</p>
+            </div>
+        </footer>
+    </section>
 </body>
+
 </html>

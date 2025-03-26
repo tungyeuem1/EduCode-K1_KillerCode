@@ -381,6 +381,12 @@ h6 {
 .footer .footer-content .footer-column ul li a {
   font-weight: 600;
 }
+.footer .footer-content .footer-column .newsletter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
 .footer .footer-content .footer-column .newsletter input {
   padding: 4px 0;
   border: none;
@@ -425,7 +431,9 @@ label {
   font-weight: bold;
 }
 
-input, select, textarea {
+form input,
+form select,
+form textarea {
   width: 100%;
   padding: 20px;
   margin-top: 5px;
@@ -458,7 +466,7 @@ input, select, textarea {
 }
 
 .checkout-total {
-  color: #B88E2F;
+  color: #b88e2f;
   font-size: 20px;
 }
 
